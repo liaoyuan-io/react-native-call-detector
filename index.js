@@ -3,6 +3,9 @@
 import { NativeModules } from 'react-native';
 import { NativeAppEventEmitter } from 'react-native';
 
+const NativeCallDetector = NativeModules.CallDetector;
+NativeCallDetector.startListener();
+
 class CallDetector {
     static listeners = {};
 
@@ -12,7 +15,6 @@ class CallDetector {
     constructor(name, callback) {
         if(CallDetector.listeners[name]) CallDetector.listeners[name].dispose();
         CallDetector.listeners[name] = this;
-        NativeModules.CallDetector.startListener();
         this.subscription = NativeAppEventEmitter.addListener('EventPhoneCallChange', callback);
     }
 

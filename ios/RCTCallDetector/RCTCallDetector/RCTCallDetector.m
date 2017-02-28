@@ -14,7 +14,7 @@
 - (NSDictionary *)constantsToExport
 {
     return @{
-             @"Incoming"    : @"Incoming",
+             @"Connected"   : @"Connected",
              @"Dialing"     : @"Dialing",
              @"Disconnected": @"Disconnected",
              @"Incoming"    : @"Incoming"
