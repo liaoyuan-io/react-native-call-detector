@@ -1,6 +1,6 @@
 {
   "name": "react-native-call-detector",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "React Native Call Detector",
   "main": "index.js",
   "scripts": {
