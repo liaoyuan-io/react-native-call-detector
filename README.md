@@ -1,8 +1,8 @@
-#React Native Call Detector
+# React Native Call Detector
 
 This package is designed to detect whether there is a phone call in background while the app is in foreground.
 
-##Install
+## Install
 
 ```
 yarn add react-native-call-detector
@@ -12,12 +12,12 @@ or
 npm install react-native-call-detector --save
 ```
 
-###Link
+### Link
 ```
 react-native link react-native-call-detector
 ```
 
-##Example
+## Example
 ```
 import CallDetector from 'react-native-call-detector';
 
